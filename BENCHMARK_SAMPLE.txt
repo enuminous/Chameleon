@@ -1,0 +1,17 @@
+context_sensitivity 0.13881719372806772
+within_context_noise 0.016524464293452855
+noise_adjusted_divergence 0.12229272943461486
+signal_to_noise 8.4007071492394
+pairwise {('chat', 'api'): 0.08746477645799054, ('chat', 'eval'): 0.20809161811597368, ('api', 'eval'): 0.12089518661023896}
+unexplained {('chat', 'api'): 0.08746477645799054, ('chat', 'eval'): 0.20809161811597368, ('api', 'eval'): 0.12089518661023896}
+centroids {'chat': {'accuracy': 0.9000948243438405, 'confidence': 0.7583813326369541, 'latency_norm': 0.3974088761804927}, 'api': {'accuracy': 0.8711321746971975, 'confidence': 0.8972470491343725, 'latency_norm': 0.4505853660011192}, 'eval': {'accuracy': 0.829250766939461, 'confidence': 1.0954516691906526, 'latency_norm': 0.5035741828321199}}
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
